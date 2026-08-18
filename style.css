@@ -305,6 +305,9 @@ a {
     width: 50%;
     margin: auto;
 }
+    .projects-section-text > p{
+        margin-bottom: 10px;
+    }
 
 #projects {
     width: 100%;
