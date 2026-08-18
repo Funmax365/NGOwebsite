@@ -50,6 +50,7 @@
 
     #nav {
         width: 90%;
+        
     }
 
     #links {
@@ -101,7 +102,7 @@
         min-height: auto;
         padding: 1rem 0;
         flex-wrap: wrap;
-    }
+     }
 
     #links {
         order: 1;
@@ -119,13 +120,14 @@
 
     #first-impression {
         height: auto;
-        min-height: 93vh;
+        min-height: 55vh;
     }
 
     #hero {
         width: 90%;
-        height: 70%;
-        margin-top: 45%; }
+        height: auto;
+        margin-top: 0px; 
+    border: solid re;  }
         #hero-about{
             color: rgba(255,255,255, 0.7);
             font-weight: bolder;
@@ -150,7 +152,7 @@
 
     #full-meaning {
         width: 200px;
-        margin-bottom: 7%;
+        margin-bottom: 70px;
     }
 
     #hero-about {
@@ -165,7 +167,8 @@
         background-color: transparent;
         border: 1px solid white;
         color: white;
-        margin-bottom: 10%;
+        margin-bottom: 40px;
+        
     }
         .read-more:active{
             background-color: white;
@@ -176,10 +179,9 @@
     #hero-cta {
         width: 100%;
         min-height: 55px;
-        background-color: transparent;
-        border: 3px solid red;
-        color: red;
-        font-weight: 900;
+        background-color: red;
+        color: white;
+        font-weight: bold;
     }
         #hero-cta:active{
             background-color: red;
