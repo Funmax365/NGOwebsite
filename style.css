@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
     scroll-behavior: smooth;
 }
 
@@ -101,30 +100,29 @@ a {
     top: 5%;
     width: 35%;
     height: 80%;
-    margin-top: 2%;
+    margin-top: 20px;
 }
 
 #text-logo {
     font-size: 5rem;
     font-weight: 700;
-    /* @media (max-width: 767.98px) {
-      #text-logo {
-        font-size: 40px;
-     } } */
+    
 }
 
 #full-meaning {
-    width: 200px;
+    width: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 40px;
+    font-size: 18px;
 }
 
 #hero-about {
     /* font-size: 1.5rem; */
     display: block;
     letter-spacing: .1rem;
-    font-size: 18px;
+    font-size: 2.2rem;
     color: white;
     font-weight: bold;
     margin: 0.5rem 0;
@@ -133,9 +131,9 @@ a {
 .read-more {
     background-color: white;
     border: none;
-    height: 10%;
-    width: 30%;
-    margin: 0.5rem 0;
+    height: 50px;
+    width: 150px;
+    margin: 10px 0;
     cursor: pointer;
     border-radius: 3px;
 }
@@ -159,7 +157,7 @@ a {
 
 #vissionandmission {
     width: 80%;
-    margin: auto;
+    margin: 0 auto 15px;
 }
 
 #vissionandmission>h2 {
@@ -238,7 +236,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid red;
 }
 
 .cfh-action>span {
@@ -294,6 +291,53 @@ a {
 .item button:hover {
     transform: translateY(-3px);
 }
+#about-us{
+    width: 80%;
+    margin: 20px auto 0;
+    display: flex;
+}
+    #about-us > div{
+        width: 50%;
+    }
+    .aboutus, #mvh{
+        width: 70%;
+    }
+    .aboutus h2{
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: var(--color3);
+    }
+    .aboutus p{
+        font-size: 1.3rem;
+    }
+    #writings button{
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+    #mvh h3{
+        margin: 10px 0;
+        font-size: 1.5rem;
+        color: var(--color3);
+        font-weight: bolder;
+    }
+    #mvh p{
+        font-size: 1.19rem;
+    }
+    .quote{
+        font-size: 1.2rem;
+        border-left: 15px solid var(--color4);
+        line-height: 1.2;
+        font-style: italic;
+        padding-left: 3%;
+        margin-bottom: 10px;
+    }
+    .creative-media{
+       width: 100%;
+    }
+        .media{
+            width: inherit;
+        }
 
 #projects-section {
     text-align: center;
