@@ -25,11 +25,12 @@
         <div id="hero">
             <div id="hero-content">
                 <span id="text-logo">
-
+                    <span style="color: red">b</span><span style="color: white;">l</span><span
+                    style="color: green;">i</span><span style="color: yellow;">n</span>
                 </span>
                 <span id="full-meaning" class="liquid-glass">BETTER LIFE INITIATIVE</span>
                 <span id="hero-about">We are an organization that gives a helping hand to the less privileged! </span>
-                <a href="#about-us" id="rmc"><button class="read-more">Read More</button></a>
+                <a href="#about-us" class="read-more">Read More</a>
                 <a href="#v-form" id="hero-cta">Donate Here</a>
             </div>
         </div>
@@ -96,15 +97,17 @@
                 <h3>Our History</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, officiis! Laborum labore repudiandae deleniti animi nisi neque praesentium laboriosam incidunt.</p>
             </div>
-           <a href="#v-form"><button class="project-cta">Donate Now</button></a>
+            <div class="aub-container">
+            <a href="#v-form" id="about-us-button" class="project-cta">Donate Now</a>
+            </div>
         </div>
         <div class="creative">
-            <div class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error molestias architecto sunt esse labore vitae.</div>
+            <div class="quote">We aim to improve the lives of everyone we set out to help through our numerous projects by ultimately trusting in God and praying for our partners.</div>
             <div class="creative-media">
                 <img class="media" src="./images/support-livelihood.jpg">
             </div>
-        </div>
-    </section>
+        </div>  
+     </section>
     <section id="projects-section">
         <div class="projects-section-text">
             <h2>Featured Projects</h2>
@@ -154,10 +157,10 @@
         <h2>DONATION FORM</h2>
         <div id="donation-form">
             <form action="">
-                <input type="number" placeholder="$0.00">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <button id="form-cta">DONATE NOW</button>
+                <input type="number" placeholder="$0.00" required>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <button id="form-cta" type="submit">DONATE NOW</button>
             </form>
         </div>
     </section>
@@ -166,7 +169,7 @@
         <div class="footers">
             <div id="navigation">
                 <h3>Navigation</h3>
-                <a><span>About Us</span></a>
+                <a href="#about-us"><span>About Us</span></a>
                 <a href="#v-form"><span>Donate Now</span></a>
                 <a href="#projects-section"><span>Projects</span></a>
             </div>
@@ -183,7 +186,7 @@
                 <span>+234-70522-72247</span>
                 <h3>Connect</h3>
                 <div class="sociamedia-links">
-                    <i class="fa-brands fa-instagram" style="color: green; font-size: 24px;"></i>
+                    
                     <i class="fa-brands fa-twitter" style="color: green; font-size: 24px;"></i>
                     <i class="fa-brands fa-pinterest" style="color: green; font-size: 24px;"></i>
                     <i class="fa-brands fa-facebook" style="color: green; font-size: 24px;"></i>

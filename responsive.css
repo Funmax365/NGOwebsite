@@ -1,35 +1,31 @@
 /* For Tablet */
+:root{
+     --hero2: url("./images/world-dotted-map.png");
+}
 @media screen and (max-width: 900px) {
 
-    #first-impression{
-        max-height: 60vh;
-    }
+    #first-impression {
+        max-height: 60vh; }
+
     #nav {
-        width: 90%;
-        
-    }
+        width: 90%; }
 
     #links {
-        margin-left: 0;
-    }
+        margin-left: 0; }
 
     #hero {
-        width: 90%;
-    }
+        width: 90%; }
 
     #hero-content {
-        width: 50%;
-    }
+        width: 50%;  }
 
     #vissionandmission {
-        width: 90%;
-    }
+        width: 90%; }
 
     .cfh-container {
         width: 90%;
         left: 5%;
-        right: 5%;
-    }
+        right: 5%; }
 
     #projects-section {
         width: 90%;
@@ -55,17 +51,19 @@
         min-height: auto;
         padding: 1rem 0;
         flex-wrap: wrap;
-     }
+    }
 
     #links {
         order: 1;
         width: 100%;
         justify-content: center;
-        margin-top: 1rem;
-    }
+        margin-top: 0;
+   }
 
-    #nav > a {
-        font-size: 0.7rem;
+    #nav>a {
+        font-size: 1rem;
+        color: green;
+        font-weight: bold;
     }
 
 
@@ -73,70 +71,79 @@
 
     #first-impression {
         height: auto;
-        min-height: 53vh;
+        min-height: 100vh;
         margin-bottom: 35px;
+        background-image: var(--hero2);
     }
+        #logo{
+            visibility: hidden;
+            }
+        #links a{
+            font-size: 1.5rem;
+        }
+        
 
-    #hero {
-        width: 90%;
-        height: auto;
-        margin-top: 0px; 
-    border: solid re;  }
-        #hero-about{
-            color: rgba(255,255,255, 0.7);
-            font-weight: bolder;
+        #hero {
+            width: 90%;
+            height: auto;
+            margin-top: 0;
         }
 
-    #hero-content {
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        right: auto;
-        top: auto;
-        width: 100%;
-        height: auto;
-        padding:  0;
-       text-align: center; }
+        #hero-content {
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            right: auto;
+            top: auto;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            text-align: center;
+        }
 
-    #text-logo {
-        font-size: 3.5rem;
-    }
+        #text-logo {
+            visibility: visible;
+            font-size: 10rem;
+            font-weight: 900;
+        }
 
-    #full-meaning {
-        width: 250px;
-        margin-bottom: 70px;
-    }
+        #full-meaning {
+            width: 80%;
+        }
 
-    #hero-about {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 3%;
-    }
+        #hero-about {
+            margin-top: 8px;
+            font-size: 3rem;
+            margin-bottom: 3%;
+            color: white;
+        }
+        
+        .read-more {
+            width: 50%;
+            min-height: 45px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            margin-bottom: 7.5%;
+            font-size: 1.2rem;
+        }
 
-    
-    .read-more {
-        min-width: 150px;
-        min-height: 45px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        margin-bottom: 7.5%;
-   }
-        .read-more:active{
+        .read-more:active {
             background-color: white;
             color: black;
             border: none;
         }
 
-    #hero-cta {
-        margin-top: 0;
-        width: 100%;
-        min-height: 55px;
-        background-color: red;
-        color: white;
-        font-weight: bold;
-    }
-        #hero-cta:active{
+        #hero-cta {
+            margin-top: 0;
+            min-height: 5rem;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        #hero-cta:active {
             background-color: red;
             color: white;
             border: none;
@@ -179,7 +186,7 @@
         border: none;
     }
 
-    .cfh-action > span {
+    .cfh-action>span {
         width: auto;
         padding: 5px 15px;
     }
@@ -196,6 +203,19 @@
         min-height: 150px;
     }
 
+    /* About Us */
+    #about-us{
+        flex-direction: column;
+    }
+    #about-us > div{
+        width: 100%;
+    }
+    .aboutus, #mvh{
+        width: 100%;
+    }
+    .aub-container{
+        margin-bottom: 15px;
+    }
 
     /* PROJECTS */
 
@@ -215,10 +235,12 @@
     .project {
         width: 100%;
     }
-    .project-section-buttons{
+
+    .project-section-buttons {
         margin-top: 10px;
     }
-    #ps-btn{
+
+    #ps-btn {
         margin-bottom: 10px;
     }
 
@@ -252,12 +274,12 @@
 }
 
 
-/*Small phones */
+/*Smaller phones*/
 
 @media screen and (max-width: 400px) {
 
     #logo {
-        font-size: 1.5rem;
+        font-size: 0;
     }
 
     #nav {
@@ -265,27 +287,72 @@
         gap: 10px;
     }
 
-    #links {
-        order: initial;
-        gap: 0.7rem;
-        font-size: 0.9rem;
-    }
+    
 
     #text-logo {
-        font-size: 3rem;
+        visibility: visible;
+        font-size: 10rem;
+        font-weight: 900;
     }
+
+    #full-meaning {
+        width: 80%;
+   }
 
     #hero-about {
-        font-size: 0.95rem;
-    }
-
-    .read-more {
-        width: 50%;
-    }
-
-    #vissionandmission > h2,
-    #projects-section h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+         margin-bottom: 3%;
+         color: white;
     }
     
+    .read-more {
+        width: 50%;
+        min-height: 45px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin-bottom: 7.5%;
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 380px) {
+
+    #logo {
+        font-size: 0;
+    }
+
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+
+    #text-logo {
+        visibility: visible;
+        font-size: 7rem;
+        font-weight: 900;
+    }
+
+    #full-meaning {
+        width: 80%;
+   }
+
+    #hero-about {
+        font-size: 2rem;
+         margin-bottom: 3%;
+         color: white;
+    }
+    
+    .read-more {
+        width: 50%;
+        min-height: 45px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin-bottom: 7.5%;
+        font-size: 1.2rem;
+    }
+
 }

@@ -10,7 +10,8 @@ body {
 }
 
 :root {
-    --world-map: url("./images/hero_1.jpg");
+    --hero1: url("./images/hero_1.jpg");
+    --hero2: url("./images/world-dotted-map.png");
     --color1: red;
     --color3: green;
     --color4: yellow;
@@ -42,7 +43,7 @@ a {
 
 #first-impression {
     background-color: black;
-    background-image: var(--world-map);
+    background-image: var(--hero1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -104,9 +105,7 @@ a {
 }
 
 #text-logo {
-    font-size: 5rem;
-    font-weight: 700;
-    
+   visibility: hidden;
 }
 
 #full-meaning {
@@ -136,6 +135,10 @@ a {
     margin: 10px 0;
     cursor: pointer;
     border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-images-cover-color);
 }
 
 #hero-cta {
@@ -295,6 +298,7 @@ a {
     width: 80%;
     margin: 20px auto 0;
     display: flex;
+    justify-content: space-between;
 }
     #about-us > div{
         width: 50%;
@@ -311,10 +315,6 @@ a {
     .aboutus p{
         font-size: 1.3rem;
     }
-    #writings button{
-        margin-top: 10px;
-        border-radius: 2px;
-    }
     #mvh h3{
         margin: 10px 0;
         font-size: 1.5rem;
@@ -324,6 +324,7 @@ a {
     #mvh p{
         font-size: 1.19rem;
     }
+    
     .quote{
         font-size: 1.2rem;
         border-left: 15px solid var(--color4);
@@ -338,6 +339,16 @@ a {
         .media{
             width: inherit;
         }
+    .aub-container{
+        display: flex;
+        margin-top: 15px;
+     }
+    #about-us-button{
+      text-align: center;
+        font-size: 1.5rem;
+        height: 100%;
+        width: 80%;
+    }
 
 #projects-section {
     text-align: center;
